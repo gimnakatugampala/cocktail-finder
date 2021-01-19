@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta
       name="google-site-verification"
@@ -60,6 +61,25 @@
       firebase.analytics();
 
       const db = firebase.firestore();
+    </script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal("h1", {
+        duration: 1500,
+        origin: "bottom",
+      });
+
+      sr.reveal("#submit", {
+        duration: 2000,
+        origin: "bottom",
+        distance: "300px",
+      });
+
+      sr.reveal("#random", {
+        duration: 2000,
+        origin: "right",
+        distance: "300px",
+      });
     </script>
     <script src="script.js"></script>
   </body>
